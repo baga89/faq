@@ -1,0 +1,249 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #134f98;
+  }
+  
+    .logo {
+      max-width: 145px;
+      width: 100%;
+      height: auto;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+  
+    nav ul li {
+      margin-right: 1rem;
+    }
+  
+    nav ul li a {
+      color: rgba(255,255,255, .8);
+      text-decoration: none;
+    }
+  
+    nav ul li a:hover {
+      color: #fff;
+    }
+  
+    nav ul li a .caret-down {
+      color: #d21f3a;
+      font-size: .625rem;
+    }
+  
+    .btn-login {
+      background-color: #1588ee;
+      color: #fff;
+    }
+  
+    .btn-register {
+      background-color: #15EEA6;
+      color: var(--secondary);
+    }
+  
+  
+  /* ==========================================================================
+     FAQ PAGE
+     ========================================================================== */
+    :root {
+      --secondary: #003668;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    html {
+      font-size: 12px;
+    }
+    
+    a:hover {
+      transition: color .4s;
+    }
+    
+    .faq-page {
+      padding: 16px;
+      background-color: var(--secondary);
+    }
+    
+    .faq-page-container {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .faq-section {
+      margin-bottom: 3rem;
+    }
+
+    .faq-heading h2 {
+      margin-bottom: 1rem;
+      color: #dee2e6;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    .faq-card {
+      border-radius: 4px;
+      background-color: #fff;
+      color: var(--secondary);
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    }
+    
+      .faq-card h1 {
+        font-size: 24px;
+      }
+    
+      .faq-card h2,
+      .faq-card h3 {
+        font-size: 20px;
+      }
+    
+      .faq-card h1,
+      .faq-card h2,
+      .faq-card h3,
+      .faq-card p {
+        line-height: 1.5;
+      }
+    
+      .faq-card p {
+        font-size: 16px;
+        padding: 0;
+      }
+    
+      .faq-card-header,
+      .faq-card-body,
+      .faq-card-footer {
+        padding: 1rem 1.5rem;
+      }
+    
+      .faq-card-header {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+      }
+    
+    .faq-card-body h1,
+    .faq-card-body h2,
+    .faq-card-body h3 {
+      margin-bottom: 1.25rem;
+     }
+  
+    .faq-card-body p {
+      margin-bottom: 1rem;
+    }
+    
+    .faq-card-body ul,
+    .faq-card-body ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .faq-card-body ul li {
+      font-size: 16px;
+      line-height: 1.75;
+      list-style-type: disc;
+    }
+  
+    .faq-card-footer {
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .faq-card-footer p {
+      font-size: 14px;
+    }
+    
+    .accordion-header {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .accordion-header:after {
+      content: '\002B';
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  
+    .accordion-header.active:after {
+      content: "\2212";
+    }
+    
+    .accordion-body {
+      display: none;
+    }
+  
+    .faq-card-subheader {
+      background-color: #dee2e6;
+      padding: .75rem;
+    }
+  
+    .white { color: #fff; }
+  
+    .mb-1 { margin-bottom: 1rem; }
+  
+    .mb-2 { margin-bottom: 1.5rem; }
+  
+    .p-0 { padding: .75rem;}
+
+    .d-none-xs { display: none; }
+  
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .75rem 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all .4s;
+  }
+  
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    .d-block-md {
+      display: block;
+    }
+  
+    .faq-page {
+      padding: 48px;
+    }
+  }
+  
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+    html {
+      font-size: 16px;
+    }
+  }
