@@ -131,9 +131,12 @@
       }
     
       .faq-card-header,
-      .faq-card-body,
       .faq-card-footer {
         padding: 1rem 1.5rem;
+      }
+
+      .faq-card-body {
+        padding: 1.5rem;
       }
     
       .faq-card-header {
